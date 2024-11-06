@@ -51,7 +51,7 @@ nav input:focus {
 
 nav .bx-search {
     position: absolute;
-    right: 50px;
+    transform: translateX(75px);
     font-size: 20px;
     cursor: pointer;
 }
