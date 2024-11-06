@@ -1,19 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Itim", cursive;
-    font-weight: 400;
-    font-style: normal;
+body {
+    font-family: 'Itim', cursive;
     background-color: rgba(128, 0, 128, 0.384);
+    color: #333;
 }
 
-header{
+header {
     display: grid;
     place-items: center;
     height: 100px;
@@ -21,64 +20,81 @@ header{
     background: linear-gradient(rgba(3, 3, 255, 0.418), rgba(128, 0, 128, 0.336), rgba(0, 0, 0, 0));
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+    margin: 20px 0;
     position: relative;
 }
-nav input{
-    border: 1px solid rgba(0, 0, 0, .3);
-    outline: none;
+
+nav input {
+    border: 1px solid rgba(0, 0, 0, 0.3);
     background: transparent;
     letter-spacing: 2px;
     padding: 5px 10px;
     border-radius: 10px;
+    transition: outline 0.3s ease;
 }
 
-nav input:hover{
-    outline: 1px solid rgba(0, 0, 0, .8);
+nav input:hover,
+nav input:focus {
+    outline: 1px solid rgba(0, 0, 0, 0.8);
 }
 
-nav .bx-search{
+nav .bx-search {
     position: absolute;
-    transform: translateX(70px);
+    right: 50px;
     font-size: 20px;
     cursor: pointer;
 }
 
-nav .bx-user{
+nav .bx-user {
     position: absolute;
     right: 0;
     font-size: 20px;
     cursor: pointer;
 }
 
-main{
+main {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    gap: 40px;
-    background-color: rgba(0, 0, 0, .3);
-}
-
-main input{
-    padding: 10px;
-    background-color: rgba(213, 4, 255, 0.219);
-    border: 1px solid rgba(0, 0, 0, .3);
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    margin: 20px;
 }
 
-main input:hover{
-    box-shadow: 0px 0px 20px black;
-    outline: 1px solid rgba(0, 0, 0, .3);
+main h2 {
+    margin-bottom: 10px;
 }
 
-footer{
-    position: absolute;
-    width: 100vw;
+main p {
+    max-width: 600px;
     text-align: center;
+}
+
+main button {
+    padding: 10px 20px;
+    background-color: rgba(213, 4, 255, 0.219);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, outline 0.3s ease;
+    cursor: pointer;
+}
+
+main button:hover {
+    box-shadow: 0px 0px 20px black;
+    outline: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
     bottom: 0;
-    transform: translateY(-20px);
 }
