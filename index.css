@@ -66,14 +66,25 @@ nav .bx-user {
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex: 1;
-    gap: 20px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin: 20px;
+}
+
+main .top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+main .bottom-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main h2 {
